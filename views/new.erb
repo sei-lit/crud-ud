@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>服薬記録サービス</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <script src="/js/font.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title white-text">
+        <a href="/">服薬記録サービス</a>
+      </h1>
+    </div>
+    <form action="/medicines/new" method="post" class="form">
+      <div class="input-form">
+        <input type="text" name="name" placeholder="お薬の名前">
+      </div>
+      <div class="input-form">
+        <input type="number" name="stock" placeholder="個数">
+        <span class="unit">個</span>
+      </div>
+      <input type="submit" value="登録" class="sub-button pos-fixed pos-sub">
+    </form>
+  </body>
+</html>
