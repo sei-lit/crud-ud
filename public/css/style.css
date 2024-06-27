@@ -29,6 +29,7 @@ body {
 .list {
   padding-top: 24px;
   text-align: center;
+  z-index: 1;
 }
 
 .item {
@@ -47,14 +48,17 @@ body {
 }
 
 .material-icons {
-  background-color: white;
+  background-color: #85C9A8;
   border-radius: 50%;
   width: 90px; 
   height: 90px; 
-  color: #85C9A8;
-  font-size: 112px !important;
+  color: white;
+  font-size: 60px;
   bottom: 85px;
   right: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
