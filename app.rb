@@ -17,20 +17,20 @@ post '/item/create' do
   redirect '/'
 end
 
-get '/item/:item_id' do
+get '/item/:id' do
   @item = Medicine.find(params[:item_id])
   erb :item
 end
 
-post '/item/:item_id' do
+post '/item/:id' do
   item = Medicine.find(params[:item_id])
   item.name = params[:item_name]
   item.stock = params[:item_stock]
   item.save
-  redirect "/item/#{item.id}"
+  redirect "/"
 end
 
-get '/item/:item_id/delete' do
+get '/item/:id/delete' do
   item = Medicine.find(params[:item_id])
   item.destroy
   redirect "/"
