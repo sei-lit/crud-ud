@@ -14,7 +14,7 @@
         <a href="/">服薬記録サービス</a>
       </h1>
     </div>
-    <form action="/item/<%= @item.id %>" method="post" id="update">
+    <form action="/item/<%= @item.id %>" method="post">
       <input type="text" name="item_name" value="<%= @item.name %>">
       <input type="number" name="item_stock" value="<%= @item.stock %>">
       <a href="/item/<%= @item.id %>/delete">削除</a>
