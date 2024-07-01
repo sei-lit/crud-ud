@@ -17,8 +17,8 @@
     <form action="/item/<%= @item.id %>" method="post" id="update">
       <input type="text" name="item_name" value="<%= @item.name %>">
       <input type="number" name="item_stock" value="<%= @item.stock %>">
+      <a href="/item/<%= @item.id %>/delete">削除</a>
+      <input type="submit" value="保存">
     </form>
-    <a href="/item/<%= @item.id %>/delete"><button>削除</button></a>
-    <button type="submit" form="update">保存</button>
   </body>
 </html>
