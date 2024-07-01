@@ -18,14 +18,16 @@
     <div class="list">
       <% @medicines.each do |medicine| %>
         <div class="item white-text">
-          <div class="text-box">
-            <p><%= medicine.name %></p>
-            <p><%= medicine.stock %>個</p>
-          </div>
+          <a href="/item/<%= medicine.id %>">
+            <div class="text-box">
+              <p><%= medicine.name %></p>
+              <p><%= medicine.stock %>個</p>
+            </div>
+          </a>
         </div>
       <% end %>
     </div>
-    <a href="/medicines/new" class="material-icons pos-fixed">
+    <a href="/item/create" class="material-icons pos-fixed">
       <i class="fa-solid fa-plus"></i>
     </a>
   </body>
