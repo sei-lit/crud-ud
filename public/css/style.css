@@ -164,6 +164,7 @@ body {
   color: #85C9A8;
   bottom: 70px;
   right: 120px;
+  box-shadow: 2px 2px 10px -5px #777777;
 }
 
 .button-group {
