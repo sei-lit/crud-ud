@@ -14,16 +14,17 @@
         <a href="/">服薬記録サービス</a>
       </h1>
     </div>
-    <form action="/item/<%= @item.id %>" method="post" class="item-form">
+    <!-- 穴埋めを使用 -->
+    <form action="/item/<%= @id%>" method="POST" class="item-form">
       <div class="input-form-ud">
-        <input type="text" name="item_name" value="<%= @item.name %>" class="name-input">
+        <input type="text" name="name" value="<%= @medicine.name%>" class="name-input">
       </div>
       <div class="input-form-ud">
-        <input type="number" name="item_stock" value="<%= @item.stock %>" class="stock-input">
+        <input type="number" name="stock" value="<%= @medicine.stock%>" class="stock-input">
         <span class="unit">個</span>
       </div>
       <div class="button-group pos-fixed">
-        <a href="/item/<%= @item.id %>/delete" class="form-button">削除</a>
+        <a href="/item/<%= @id%>/delete" class="form-button">削除</a>
         <input type="submit" value="保存" class="form-button">
       </div>
     </form>
